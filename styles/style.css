@@ -90,16 +90,13 @@ fieldset {
   margin-bottom: 16px;
 }
 
-.content__details {
-  grid-area: details;
-}
-
 ul,
 ol {
   list-style: none;
 }
 
 .content__details {
+  grid-area: details;
   width: 100%;
   height: 100%;
   display: flex;
