@@ -319,7 +319,7 @@ html, body {
   display: block;
 }
 
-.content__card-link_current:focus { 
+.content__card-link:focus { 
   outline: none;
 }
 
@@ -332,7 +332,7 @@ html, body {
   cursor: pointer;
 }
 
-.content__card-link_current:focus-visible { 
+.content__card-link:focus-visible { 
   outline: 1px #fff solid;
   outline-offset: 2px;
 }
