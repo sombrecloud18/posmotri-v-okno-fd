@@ -72,6 +72,7 @@ fieldset {
   flex-direction: row;
   width: fit-content;
   gap: 5px;
+  align-items: center;
 }
 
 .result {
@@ -135,14 +136,15 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
@@ -160,7 +162,7 @@ ol {
 
 .content__video-card-title {
   width: 196px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 100%; /* 30px */
@@ -172,7 +174,7 @@ ol {
 
 .content__video-card-description {
   width: 196px;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -180,12 +182,8 @@ ol {
   line-clamp: 4;
 }
 
-
 html, body {
   height: 100%;
-}
-
-html, body {
   background-color: #1B1919;
   display: flex;
   align-items: center;
@@ -196,8 +194,8 @@ html, body {
   width: 225px;
   height: 27px;
   border: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
   color: #fff;
@@ -276,7 +274,7 @@ html, body {
   background-color: transparent;
   color: #FFF;
   text-align: center;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -317,20 +315,21 @@ html, body {
   padding-right: 3px;
 }
 
-.content__list-item:focus {
+.content__card-link_current:focus { 
   outline: none;
 }
 
-.content__list-item:active {
-  background: #545050;
+.content__card-link:active { 
+  background-color: #545050; 
+  display: block;
 }
 
-.content__list-item:hover {
+.content__card-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.content__list-item:focus-visible {
+.content__card-link_current:focus-visible { 
   outline: 1px #fff solid;
   outline-offset: 2px;
 }
