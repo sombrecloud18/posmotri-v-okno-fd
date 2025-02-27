@@ -315,13 +315,16 @@ html, body {
   padding-right: 3px;
 }
 
+.content__card-link {
+  display: block;
+}
+
 .content__card-link_current:focus { 
   outline: none;
 }
 
 .content__card-link:active { 
   background-color: #545050; 
-  display: block;
 }
 
 .content__card-link:hover {
