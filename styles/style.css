@@ -155,11 +155,6 @@ ol {
   color: #545050;
 }
 
-.content__card-link {
-  color: #FFF;
-  text-decoration: none;
-}
-
 .content__video-card-title {
   width: 196px;
   font-family: Oswald, sans-serif;
@@ -316,11 +311,17 @@ html, body {
 }
 
 .content__card-link {
+  color: #FFF;
+  text-decoration: none;
   display: block;
 }
 
 .content__card-link:focus { 
   outline: none;
+}
+
+.content__card-link_current { 
+  background-color: #545050; 
 }
 
 .content__card-link:active { 
